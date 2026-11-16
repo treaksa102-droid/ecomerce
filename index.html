@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoShop – Natural &amp; Eco-friendly Products</title>
+  <meta name="description"
+    content="EcoShop sells natural, plastic-free soaps, creams, olive oil, honey and tea made in small batches in Phnom Penh.">
+  <meta name="theme-color" content="#14591D">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta property="og:title" content="EcoShop – Natural & Eco-friendly Products">
+  <meta property="og:description" content="Small-batch natural care and pantry essentials, delivered fast.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="og-image.jpg">
+  <script>try { var th = localStorage.getItem("theme"); if (th) th = JSON.parse(th); if (!th) th = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; document.documentElement.setAttribute("data-theme", th) } catch (e) { }</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="EcoShop home">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M5 27C5 14 13 5 27 5c0 14-8 22-20 22Z" fill="#99AA38" />
+          <path d="M5 27 19 13" stroke="#0A210F" stroke-width="2.2" stroke-linecap="round" />
+        </svg>
+        EcoShop
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" data-i18n="nav_home">Home</a></li>
+          <li><a href="#products" data-i18n="nav_products">Products</a></li>
+          <li><a href="#tips" data-i18n="nav_tips">Tips</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          <li><a href="#track" class="track-link" data-i18n="track">Track order</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="cur-btn" id="curBtn" aria-label="Change currency">៛</button>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle light / dark mode" title="Light / Dark"><span
+            aria-hidden="true">🌙</span></button>
+        <button class="lang-btn" id="langBtn" aria-label="Change language">ខ្មែរ</button>
+        <button class="cart-btn" id="openCart" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="9" cy="20" r="1.6" />
+            <circle cx="18" cy="20" r="1.6" />
+            <path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6" />
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <h1 data-i18n="hero_title">Everyday care, grown from the earth.</h1>
+          <p data-i18n="hero_sub">Soaps, creams, oils and teas made from plants we can name.</p>
+          <a href="#products" class="btn" data-i18n="shop_now">Shop Now</a>
+        </div>
+        <div class="hero-image" role="img" aria-label="Hero image placeholder">
+          <svg viewBox="0 0 200 200" fill="none" aria-hidden="true">
+            <path d="M100 185V90" stroke="#0A210F" stroke-width="5" stroke-linecap="round" />
+            <path d="M100 120C60 120 38 95 38 55c40 0 62 25 62 65Z" fill="#14591D" />
+            <path d="M100 100c0-38 22-62 62-62 0 40-22 62-62 62Z" fill="#E1E289" />
+            <path d="M100 150c-28 0-44-16-44-44 28 0 44 16 44 44Z" fill="#0A210F" opacity=".85" />
+          </svg>
+          <small>Hero image placeholder</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Why EcoShop">
+      <div class="container feature-grid">
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 21c0-9 5-16 16-16 0 10-6 16-16 16Z" />
+              <path d="M5 21 14 12" />
+            </svg></div>
+          <div>
+            <h3 data-i18n="f1_t">100% Natural</h3>
+            <p data-i18n="f1_d"></p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 6h12v10H2zM14 9h4l4 4v3h-8" />
+              <circle cx="7" cy="18" r="2" />
+              <circle cx="18" cy="18" r="2" />
+            </svg></div>
+          <div>
+            <h3 data-i18n="f2_t">Fast Delivery</h3>
+            <p data-i18n="f2_d"></p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg></div>
+          <div>
+            <h3 data-i18n="f3_t">Guarantee</h3>
+            <p data-i18n="f3_d"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="prod_t">Our products</h2>
+          <p data-i18n="prod_d"></p>
+        </div>
+        <div class="toolbar">
+          <input type="search" id="search" class="search" data-i18n-ph="search_ph" aria-label="Search products">
+          <select id="sort" class="sort" aria-label="Sort products">
+            <option value="def" data-i18n="sort_def">Sort: Default</option>
+            <option value="low" data-i18n="sort_low">Price: low to high</option>
+            <option value="high" data-i18n="sort_high">Price: high to low</option>
+          </select>
+          <div class="chips" id="chips">
+            <button class="chip active" data-cat="all" data-i18n="cat_all">All</button>
+            <button class="chip" data-cat="body" data-i18n="cat_body">Body care</button>
+            <button class="chip" data-cat="food" data-i18n="cat_food">Food &amp; drink</button>
+            <button class="chip" data-cat="wish" data-i18n="cat_wish">♥ Wishlist</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <p class="no-results" id="noResults" hidden data-i18n="no_results"></p>
+      </div>
+    </section>
+
+    <section id="tips">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="tips_t">Green living tips</h2>
+          <p data-i18n="tips_d"></p>
+        </div>
+        <div class="tip-grid" id="tipGrid"></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="about-box">
+          <h2 data-i18n="about_t">About EcoShop</h2>
+          <p data-i18n="about_d1"></p>
+          <p data-i18n="about_d2"></p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Customer reviews">
+      <div class="container">
+        <div class="testimonial-box">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote id="tQuote"></blockquote>
+          <div class="who">
+            <div class="avatar" id="tAvatar"></div>
+            <div><strong id="tName"></strong><small id="tCity"></small></div>
+          </div>
+          <div class="dots" id="tDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" aria-label="Newsletter">
+      <div class="container">
+        <div class="news-box">
+          <h2 data-i18n="news_t"></h2>
+          <p data-i18n="news_d"></p>
+          <form class="news-form" id="newsForm" novalidate>
+            <input type="email" id="email" data-i18n-ph="email_ph" aria-label="Email address" required>
+            <button class="btn" type="submit" data-i18n="subscribe">Subscribe</button>
+          </form>
+          <div class="form-msg" id="formMsg" role="status"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo">EcoShop</div>
+          <p data-i18n="tagline"></p>
+          <ul class="social">
+            <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://t.me/ecoshop" target="_blank" rel="noopener">Telegram</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="contact_t">Contact</h3>
+          <ul>
+            <li>hello@ecoshop.example</li>
+            <li>+855 12 345 678</li>
+            <li data-i18n="address">Phnom Penh, Cambodia</li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="links_t">Quick links</h3>
+          <ul>
+            <li><a href="#home" data-i18n="nav_home"></a></li>
+            <li><a href="#products" data-i18n="nav_products"></a></li>
+            <li><a href="#about" data-i18n="nav_about"></a></li>
+            <li><a href="#track" class="track-link" data-i18n="track"></a></li>
+          </ul>
+        </div>
+        <div>
+          <iframe class="map" title="EcoShop location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Phnom+Penh,+Cambodia&output=embed"></iframe>
+        </div>
+      </div>
+      <p class="copy">© <span id="year">2026</span> EcoShop. <span data-i18n="rights"></span></p>
+    </div>
+  </footer>
+
+<div class="floats">
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <a class="chat" href="https://t.me/reaksa0192" target="_blank" rel="noopener">
+    <img src="tele.png" alt="Telegram"><span>Telegram</span>
+  </a>
+
+  <a class="chat" href="https://www.facebook.com/share/1DXTvvq6Py/?mibextid=wwXIfr" target="_blank" rel="noopener">
+    <img src="image.png" alt="Messenger"><span>Messenger</span>
+  </a>
+</div>
+
+
+
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head">
+      <h2 data-i18n="cart_t">Your cart</h2>
+      <button class="close" id="closeCart" aria-label="Close cart">×</button>
+    </div>
+    <ul class="cart-items" id="cartItems"></ul>
+    <div class="cart-foot">
+      <div class="promo">
+        <input id="promo" data-i18n-ph="promo_ph" aria-label="Discount code">
+        <button class="btn small" id="applyPromo" data-i18n="apply">Apply</button>
+      </div>
+      <div class="promo-msg" id="promoMsg" role="status"></div>
+      <div class="ship-hint" id="shipHint"></div>
+      <div class="line"><span data-i18n="subtotal"></span><span id="subtotal"></span></div>
+      <div class="line" id="discLine" hidden><span data-i18n="discount"></span><span id="discount"></span></div>
+      <div class="line"><span data-i18n="shipping"></span><span id="shipping"></span></div>
+      <div class="total"><span data-i18n="total"></span><span id="cartTotal"></span></div>
+      <button class="btn" id="checkout" data-i18n="checkout">Checkout</button>
+    </div>
+  </aside>
+
+  <dialog id="detailDlg" class="dlg">
+    <div id="detailBody"></div>
+  </dialog>
+  <dialog id="checkoutDlg" class="dlg">
+    <div id="checkoutBody"></div>
+  </dialog>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
